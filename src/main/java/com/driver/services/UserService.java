@@ -22,7 +22,7 @@ public class UserService {
     WebSeriesRepository webSeriesRepository;
 
 
-    int c=0;
+
     public Integer addUser(User user){
 
         //Jut simply add the user to the Db and return the userId returned by the repository
