@@ -26,11 +26,11 @@ public class UserService {
     public Integer addUser(User user){
 
         //Jut simply add the user to the Db and return the userId returned by the repository
-        User u=new User();
-        u.setAge(user.getAge());
-        u.setName(user.getName());
-        u.setMobNo(user.getMobNo());
-        User us=userRepository.save(u);
+//        User u=new User();
+//        u.setAge(user.getAge());
+//        u.setName(user.getName());
+//        u.setMobNo(user.getMobNo());
+        User us=userRepository.save(user);
         return us.getId();
     }
 
